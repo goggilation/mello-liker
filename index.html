@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mello Clicker</h1>
+        <div class="artist-nav">
+            <button class="nav-button" id="prev-button">&#8249;</button>
+            <h2 id="current-artist"></h2>
+            <button class="nav-button" id="next-button">&#8250;</button>
+        </div>
+        <div class="ratings">
+            <img src="heart-pink.png" alt="heart" class="disabled rating" id="rating-1">
+            <img src="heart-pink.png" alt="heart" class="disabled rating" id="rating-2">
+            <img src="heart-pink.png" alt="heart" class="disabled rating" id="rating-3">
+            <img src="heart-pink.png" alt="heart" class="disabled rating" id="rating-4">
+            <img src="heart-pink.png" alt="heart" class="disabled rating" id="rating-5">
+        </div>
+    </header>
+        <svg class="like-circle" id="like-circle" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+            <circle 
+                class="circle-backgroud"
+                stroke="#d699ba"
+                stroke-width="2"
+                fill="none"
+                cx="16.91549431"
+                cy="16.91549431"
+                r="15.91549431"
+            />
+            <circle 
+                class="circle-foreground"
+                id="circle-foreground"
+                stroke="#d73b8f"
+                stroke-width="2"
+                stroke-dasharray="0, 100"
+                stroke-linecap="round"
+                fill="none"
+                cx="16.91549431"
+                cy="16.91549431"
+                r="15.91549431"
+            />
+            <image 
+                class="like-heart"
+                id="like-heart"
+                href="heart-pink.png"
+                x="7"
+                y="8"
+                width="20"
+                height="20"
+            />
+        </svg>
+        <button id="clear-storage">Clear</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
